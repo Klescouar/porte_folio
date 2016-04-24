@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('header a').click(function(e) {
+    $('.scroll').click(function(e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $(e.target.hash).offset().top

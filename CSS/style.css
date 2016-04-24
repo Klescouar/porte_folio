@@ -82,17 +82,20 @@ header a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    transition: 0.5s all;
 }
 #presentation a:hover {
-    background-color: rgb(129, 126, 103);
-    color: rgb(10, 10, 10);
+    transition: 0.5s all;
+    background-color: rgba(181, 177, 146, 0.3);
+    color: rgb(215, 215, 215);
 }
 #competence {
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 400px;
 }
 #projet {
@@ -103,15 +106,50 @@ header a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 1px dashed rgb(122, 122, 122);
+    /*border: 1px dashed rgb(122, 122, 122);*/
     padding: 30px;
+    margin-top: 40px;
 }
 
-.title {
-  font-size: 2em;
-  width: 100%;
-  background-color: rgb(19, 19, 19);
-  margin: auto;
+.section-title {
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 1.3em;
+}
+.tag {
+    text-transform: uppercase;
+    position: relative;
+    line-height: 2.5em;
+    padding: 0 1em;
+    display: inline-block;
+}
+
+.tag-regular {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #404040;
+}
+
+.tag:before, .tag:after {
+    content: "";
+    height: 1px;
+    /* any width higher than the widest part of the page */
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    display: block;
+}
+.tag-regular:before, .tag-regular:after {
+    background-color: #ddd;
+}
+.tag-colored:before, .tag-colored:after {
+    background-color: skyblue;
+}
+.tag:before {
+    left: -1000px;
+}
+.tag:after {
+    right: -1000px;
 }
 .row {
     display: flex;
@@ -168,19 +206,20 @@ footer {
     bottom: 0;
 }
 #link p {
-  width: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #link {
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     border-top: 1px solid rgb(84, 83, 83);
     width: 70%;
-    height: 80px;
+    min-height: 80px;
     text-align: center;
 }
 #link h4 {
@@ -217,6 +256,7 @@ footer {
     color: rgb(108, 106, 106);
 }
 .container {
+  margin-top: 80px;
     width: 100%;
 }
 .container:before, .container:after {
@@ -227,13 +267,12 @@ footer {
     clear: both;
 }
 dt:after {
-    width: 100%;
     background-color: #404040;
     height: 1rem;
     content: "";
     display: block;
     border-radius: 4px;
-
+    margin: auto;
 }
 dd {
     background: red;
@@ -250,10 +289,10 @@ dd.css {
     background: #2196F3;
 }
 dd.jquery {
-    background: #FFCA28;
+    background: #7b4fad;
 }
 dd.scss {
-    background: #F06292;
+    background: #38703a;
 }
 dd.javascript {
     background: #FFA000;
@@ -281,5 +320,17 @@ dd.php {
 @media screen and (max-width: 558px) {
     header a {
         padding: 0 3%;
+    }
+}
+@media screen and (max-width: 880px) {
+    #link {
+        flex-direction: column;
+        ;
+    }
+    .icone {
+        margin: 10px;
+    }
+    #link p {
+        margin: 10px;
     }
 }

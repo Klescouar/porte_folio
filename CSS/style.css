@@ -317,7 +317,7 @@ dd.php {
         transition: 0.4s;
     }
 }
-@media screen and (max-width: 558px) {
+@media screen and (max-width: 660px) {
     header a {
         padding: 0 3%;
     }

@@ -42,6 +42,7 @@ header a:hover {
     transition: 0.5s all ease;
 }
 #presentation {
+  min-height: 89vh;
     margin: auto;
     border-radius: 3px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/background.png");
@@ -63,13 +64,15 @@ header a:hover {
 }
 #presentation img {
     margin-top: 20px;
-    margin-bottom: 10px;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50% 50%;
-}
-#presentation p {
     margin-bottom: 20px;
+}
+.prez {
+  width: 95%;
+  margin: auto;
+  font-size: 0.9em;
 }
 #presentation a {
     width: 150px;

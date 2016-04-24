@@ -218,8 +218,7 @@ footer {
     margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     border-top: 1px solid rgb(84, 83, 83);
     width: 70%;
     min-height: 80px;
@@ -230,8 +229,9 @@ footer {
 }
 .icone {
     display: flex;
-    justify-content: space-around;
-    width: 33%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 #link a {
     text-decoration: none;
@@ -252,11 +252,12 @@ footer {
     transition: 0.5s;
     font-size: 1.3em;
 }
-.inc p {
+#link p {
     margin: 20px;
-    width: 100%;
-    font-size: 0.7em;
+    width: 120px;
+    font-size: 0.8em;
     color: rgb(108, 106, 106);
+    padding: 20px;
 }
 .container {
   margin-top: 80px;

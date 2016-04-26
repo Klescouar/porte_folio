@@ -5,8 +5,8 @@
 body {
     background-color: black;
     color: rgb(133, 133, 133);
-font-family: 'Roboto', sans-serif;
-letter-spacing: 1.2;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2;
     font-size: 1.2em;
     font-weight: lighter;
 }
@@ -22,9 +22,9 @@ header {
 header a {
     padding: 0 7%;
     text-decoration: none;
-    color: rgb(133, 133, 133);
+    color: rgb(175, 175, 175);
     transition: 0.5s all ease;
-    border-left: 1px solid rgb(31, 30, 30);
+    border-left: 1px solid rgb(59, 59, 59);
 }
 header a:focus {
     outline: none;
@@ -42,7 +42,7 @@ header a:hover {
     transition: 0.5s all ease;
 }
 #presentation {
-  min-height: 89vh;
+    min-height: 89vh;
     margin: auto;
     border-radius: 3px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/background.png");
@@ -51,7 +51,7 @@ header a:hover {
     background-repeat: no-repeat;
     display: flex;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
@@ -69,31 +69,25 @@ header a:hover {
     margin-bottom: 20px;
 }
 #presentation span {
-  font-style: italic;
-  font-size: 0.7em;
+    font-style: italic;
+    font-size: 0.7em;
 }
 .prez {
-  width: 95%;
-  margin: auto;
-  font-size: 0.9em;
+    width: 95%;
+    margin: auto;
+    font-size: 0.9em;
+}
+#presentation i {
+    color: white;
+    background-color: black;
+    font-size: 1.3em;
+    margin: 0px 20px 0px 20px;
 }
 #presentation a {
-    width: 150px;
-    height: 40px;
-    background-color: rgb(181, 177, 146);
-    margin-bottom: 20px;
-    color: rgb(31, 31, 31);
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    transition: 0.5s all;
 }
-#presentation a:hover {
-    transition: 0.5s all;
-    background-color: rgba(181, 177, 146, 0.3);
-    color: rgb(215, 215, 215);
+#presentation i:hover {
+    background-color: rgb(57, 57, 57);
 }
 #competence {
     width: 80%;
@@ -116,11 +110,10 @@ header a:hover {
     padding: 30px;
     margin-top: 40px;
 }
-
 .section-title {
     text-align: center;
     overflow: hidden;
-    margin-bottom: 1.3em;
+    margin-top: 40px;
 }
 .tag {
     text-transform: uppercase;
@@ -129,13 +122,11 @@ header a:hover {
     padding: 0 1em;
     display: inline-block;
 }
-
 .tag-regular {
     background-color: #fff;
     border: 1px solid #ddd;
     color: #404040;
 }
-
 .tag:before, .tag:after {
     content: "";
     height: 1px;
@@ -260,10 +251,10 @@ footer {
     width: 120px;
     font-size: 0.8em;
     color: rgb(108, 106, 106);
-    padding: 20px;
+    padding: 0px 60px 0px 60px;
 }
 .container {
-  margin-top: 80px;
+    margin-top: 80px;
     width: 100%;
 }
 .container:before, .container:after {
@@ -272,6 +263,9 @@ footer {
 }
 .container:after {
     clear: both;
+}
+dl {
+    margin-top: 30px;
 }
 dt:after {
     background-color: #404040;

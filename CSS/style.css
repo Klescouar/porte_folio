@@ -42,9 +42,7 @@ header a:hover {
     transition: 0.5s all ease;
 }
 #presentation {
-    min-height: 89vh;
     margin: auto;
-    border-radius: 3px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/background.png");
     background-attachment: fixed;
     background-position: top;
@@ -52,10 +50,11 @@ header a:hover {
     display: flex;
     color: white;
     font-size: 1.1em;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    line-height: 1.4em;
+    padding: 0px 0px 20px 0px;
 }
 .space {
     letter-spacing: 5px;
@@ -71,9 +70,10 @@ header a:hover {
 #presentation span {
     font-style: italic;
     font-size: 0.7em;
+    margin-bottom: 20px;
 }
 .prez {
-    width: 95%;
+    width: 80%;
     margin: auto;
     font-size: 0.9em;
 }
@@ -97,6 +97,7 @@ header a:hover {
     justify-content: center;
     flex-direction: column;
     height: 400px;
+    padding-top: 20px;
 }
 #projet {
     width: 80%;
@@ -256,6 +257,7 @@ footer {
 .container {
     margin-top: 80px;
     width: 100%;
+    margin-bottom: 50px;
 }
 .container:before, .container:after {
     content: "";
@@ -282,6 +284,7 @@ dd {
     position: relative;
     top: -1rem;
     border-radius: 4px;
+    margin-bottom: 7px;
 }
 dd.html {
     background: #F44336;

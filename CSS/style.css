@@ -59,6 +59,7 @@ header a:hover {
 .space {
     letter-spacing: 5px;
     font-size: 1.3em;
+    text-align: center;
 }
 #presentation img {
     margin-top: 20px;
@@ -339,5 +340,8 @@ dd.php {
     }
     #presentation {
       text-align: left;
+    }
+    #presentation span {
+text-align: center;
     }
 }

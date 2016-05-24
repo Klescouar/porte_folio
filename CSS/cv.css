@@ -1,9 +1,10 @@
 body {
     background-color: #0A0B0D;
+
 }
 .cv {
     background-image: url("../images/cv2.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
     margin: auto;

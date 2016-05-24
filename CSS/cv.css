@@ -4,11 +4,9 @@ body {
 }
 .cv {
     background-image: url("../images/cv2.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    background-size: contain;
+    width: 90%;
+    height: 700px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    width: 70%;
 }

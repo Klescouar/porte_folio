@@ -5,7 +5,7 @@ body {
 .cv {
     background-image: url("../images/cv2.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 90%;
     height: 800px;
     margin: auto;
